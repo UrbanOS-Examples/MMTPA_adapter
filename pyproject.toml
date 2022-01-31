@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "MMTPA_adapter"
+version = "0.1.0"
+description = ""
+authors = ["Kevin Carrabine <kevincarrabine23@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+fastapi = "^0.63.0"
+uvicorn = {extras = ["standard"], version = "^0.13.0"}
+google-cloud-bigquery = "^2.7.0"
+google-api-core = "^1.23.0"
+grpcio = "^1.36.0"
+gunicorn = "^20.0.4"
+PyJWT = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
